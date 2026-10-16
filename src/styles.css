@@ -325,48 +325,80 @@
 
 @media (max-width: 1399px) {
   .sos-nav {
-    gap: 28px;
+    gap: 31px;
   }
 
-  .sos-copy {
-    top: 22%;
+  .sos-brand {
+    gap: 13px;
   }
 
-  .sos-heading {
-    font-size: 72px;
+  .sos-brand__mark {
+    font-size: 29px;
   }
 
-  .sos-eyebrow {
-    margin-bottom: 29px;
+  .sos-brand__divider {
+    height: 27px;
+  }
+
+  .sos-brand__country {
     font-size: 10px;
   }
 
+  .sos-header__contact {
+    width: 120px;
+    height: 38px;
+    font-size: 11px;
+  }
+
+  .sos-copy {
+    top: 23.4%;
+  }
+
+  .sos-heading {
+    font-size: 61px;
+  }
+
+  .sos-eyebrow {
+    gap: 12px;
+    margin-bottom: 26px;
+    font-size: 9px;
+  }
+
+  .sos-eyebrow__rule {
+    width: 39px;
+  }
+
   .sos-description {
-    margin-top: 17px;
-    font-size: 16px;
+    margin: 16px 0 0 5px;
+    font-size: 14px;
   }
 
   .sos-actions {
-    gap: 24px;
-    margin-top: 25px;
+    gap: 21px;
+    margin: 23px 0 0 5px;
   }
 
   .sos-action-primary {
-    width: 250px;
-    height: 56px;
-    padding: 0 23px 0 29px;
-    font-size: 14px;
+    width: 200px;
+    height: 44px;
+    padding: 0 19px 0 28px;
+    font-size: 11px;
+  }
+
+  .sos-action-primary svg {
+    width: 14px;
+    height: 14px;
   }
 
   .sos-action-watch {
-    height: 56px;
-    gap: 14px;
-    font-size: 14px;
+    height: 44px;
+    gap: 13px;
+    font-size: 11px;
   }
 
   .sos-play {
-    width: 40px;
-    height: 40px;
+    width: 31px;
+    height: 31px;
   }
 }
 
