@@ -9,4 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the SOS India first-screen recreation as one root route with shared global design tokens; the requested experience is a single hero, and centralized styling keeps it visually consistent.
+- Keep the SOS India homepage on its existing root route and use shared global design tokens so the hero and following sections remain a cohesive site.
+- Keep reusable SOS India homepage sections under `src/components/sos` and CMS content contracts under `src/lib`; this separates presentation from data and avoids implying that an unconfigured content backend is live.
