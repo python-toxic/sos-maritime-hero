@@ -492,3 +492,602 @@
     margin-left: 0;
   }
 }
+
+.sos-section-inner {
+  width: min(1120px, calc(100% - 96px));
+  margin-inline: auto;
+}
+
+.sos-section-heading {
+  max-width: 680px;
+  margin-bottom: 38px;
+}
+
+.sos-section-label {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.sos-section-heading h2,
+.sos-about-copy h2,
+.sos-values-layout h2,
+.sos-careers-copy h2,
+.sos-contact-layout h2 {
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-serif-display);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.sos-section-description,
+.sos-values-intro {
+  max-width: 600px;
+  margin: 14px 0 0;
+  color: var(--muted-foreground);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.sos-empty-state {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.sos-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.sos-trust-strip {
+  border-block: 1px solid var(--border);
+  background: var(--secondary);
+}
+
+.sos-trust-strip__inner {
+  display: flex;
+  min-height: 132px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.sos-trust-strip h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sos-trust-strip__note {
+  max-width: 440px;
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sos-about-section,
+.sos-services-section,
+.sos-values-section,
+.sos-courses-section,
+.sos-people-section,
+.sos-careers-section,
+.sos-insights-section,
+.sos-contact-section {
+  padding-block: 96px;
+}
+
+.sos-about-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 72px;
+}
+
+.sos-about-copy > p:not(.sos-section-label) {
+  max-width: 470px;
+  margin: 21px 0 24px;
+  color: var(--muted-foreground);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.sos-about-image {
+  margin: 0;
+}
+
+.sos-about-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 10 / 7;
+  object-fit: cover;
+}
+
+.sos-about-image figcaption {
+  margin-top: 9px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+
+.sos-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sos-inline-link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 160ms ease;
+}
+
+.sos-inline-link:hover svg {
+  transform: translateX(3px);
+}
+
+.sos-services-section,
+.sos-people-section,
+.sos-insights-section {
+  background: var(--secondary);
+}
+
+.sos-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+}
+
+.sos-service-item {
+  min-height: 240px;
+  padding: 28px 28px 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sos-service-item:not(:nth-child(3n + 1)) {
+  padding-left: 28px;
+  border-left: 1px solid var(--border);
+}
+
+.sos-service-item__number {
+  margin-bottom: 29px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sos-service-item h3,
+.sos-content-item h3,
+.sos-person-item h3,
+.sos-vacancy-item h3,
+.sos-values-list h3 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.sos-service-item > p,
+.sos-content-item > p,
+.sos-person-item > p,
+.sos-vacancy-item p,
+.sos-values-list p {
+  margin: 9px 0 17px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.sos-values-section {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.sos-values-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: 84px;
+}
+
+.sos-values-layout .sos-section-label,
+.sos-values-layout h2 {
+  color: var(--primary-foreground);
+}
+
+.sos-values-layout h2 {
+  max-width: 440px;
+}
+
+.sos-values-intro {
+  color: color-mix(in oklab, var(--primary-foreground) 76%, transparent);
+}
+
+.sos-values-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 38px;
+}
+
+.sos-values-list article {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sos-values-list article > svg {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  color: var(--ring);
+}
+
+.sos-values-list h3 {
+  color: var(--primary-foreground);
+  font-size: 15px;
+}
+
+.sos-values-list p {
+  margin-bottom: 0;
+  color: color-mix(in oklab, var(--primary-foreground) 76%, transparent);
+}
+
+.sos-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+}
+
+.sos-content-grid--four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sos-content-item {
+  min-height: 180px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.sos-content-item > svg {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 23px;
+  color: var(--accent);
+}
+
+.sos-person-item img,
+.sos-person-item__placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.6;
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+
+.sos-person-item__placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--muted);
+  color: var(--accent);
+}
+
+.sos-person-item__placeholder svg {
+  width: 38px;
+  height: 38px;
+}
+
+.sos-person-item .sos-person-item__bio {
+  margin-top: 12px;
+}
+
+.sos-careers-section {
+  background: var(--secondary);
+}
+
+.sos-careers-layout {
+  display: grid;
+  grid-template-columns: 52px minmax(220px, 0.8fr) 1.2fr;
+  align-items: start;
+  gap: 28px;
+}
+
+.sos-careers-mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--border);
+  color: var(--accent);
+}
+
+.sos-careers-mark svg {
+  width: 22px;
+  height: 22px;
+}
+
+.sos-careers-copy h2 {
+  font-size: 34px;
+}
+
+.sos-careers-copy > p:last-child {
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.sos-vacancy-list {
+  border-top: 1px solid var(--border);
+}
+
+.sos-vacancy-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 21px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sos-vacancy-item p {
+  margin-bottom: 0;
+}
+
+.sos-insights-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.sos-contact-section {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.sos-contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.sos-contact-layout .sos-section-label,
+.sos-contact-layout h2 {
+  color: var(--accent-foreground);
+}
+
+.sos-contact-layout h2 {
+  max-width: 650px;
+}
+
+.sos-contact-actions {
+  display: flex;
+  min-width: 225px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sos-contact-actions > p {
+  margin: 0;
+  color: color-mix(in oklab, var(--accent-foreground) 82%, transparent);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.sos-contact-actions button {
+  width: 100%;
+}
+
+.sos-contact-actions button:disabled {
+  opacity: 0.68;
+}
+
+.sos-footer {
+  padding-block: 35px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.sos-footer-layout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 36px;
+}
+
+.sos-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-foreground);
+  text-decoration: none;
+}
+
+.sos-footer-brand span {
+  font-family: var(--font-serif-display);
+  font-size: 26px;
+}
+
+.sos-footer-brand small {
+  font-size: 10px;
+}
+
+.sos-footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sos-footer nav a,
+.sos-footer-layout > p {
+  color: color-mix(in oklab, var(--primary-foreground) 78%, transparent);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.sos-footer-layout > p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .sos-section-inner {
+    width: min(100% - 48px, 700px);
+  }
+
+  .sos-about-section,
+  .sos-services-section,
+  .sos-values-section,
+  .sos-courses-section,
+  .sos-people-section,
+  .sos-careers-section,
+  .sos-insights-section,
+  .sos-contact-section {
+    padding-block: 68px;
+  }
+
+  .sos-about-layout,
+  .sos-values-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .sos-careers-layout {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .sos-vacancy-list,
+  .sos-careers-layout > .sos-empty-state {
+    grid-column: 2;
+  }
+
+  .sos-content-grid--four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sos-footer-layout {
+    grid-template-columns: auto 1fr;
+  }
+
+  .sos-footer-layout > p {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .sos-section-inner {
+    width: calc(100% - 40px);
+  }
+
+  .sos-section-heading {
+    margin-bottom: 28px;
+  }
+
+  .sos-section-heading h2,
+  .sos-about-copy h2,
+  .sos-values-layout h2,
+  .sos-contact-layout h2 {
+    font-size: 36px;
+  }
+
+  .sos-trust-strip__inner,
+  .sos-contact-layout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sos-trust-strip__inner {
+    justify-content: center;
+    padding-block: 25px;
+  }
+
+  .sos-about-section,
+  .sos-services-section,
+  .sos-values-section,
+  .sos-courses-section,
+  .sos-people-section,
+  .sos-careers-section,
+  .sos-insights-section,
+  .sos-contact-section {
+    padding-block: 54px;
+  }
+
+  .sos-service-grid,
+  .sos-content-grid,
+  .sos-content-grid--four,
+  .sos-insights-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sos-service-item,
+  .sos-service-item:not(:nth-child(3n + 1)) {
+    min-height: auto;
+    padding: 22px 0;
+    border-left: 0;
+  }
+
+  .sos-service-item__number {
+    margin-bottom: 15px;
+  }
+
+  .sos-values-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sos-careers-layout {
+    grid-template-columns: 42px 1fr;
+    gap: 20px;
+  }
+
+  .sos-careers-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .sos-careers-copy h2 {
+    font-size: 30px;
+  }
+
+  .sos-vacancy-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sos-insights-layout {
+    gap: 8px;
+  }
+
+  .sos-footer-layout {
+    grid-template-columns: 1fr;
+    gap: 21px;
+  }
+
+  .sos-footer-layout > p {
+    grid-column: auto;
+  }
+
+  .sos-footer nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+}
